@@ -1,2 +1,6 @@
 .idea
 venv
+build/nsis/pkgs
+build/nsis/Python
+build/nsis/msvcrt
+src/build

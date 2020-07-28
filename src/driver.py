@@ -4,6 +4,7 @@ from shutil import copy2
 from datetime import datetime
 import tkinter as tk
 from tkinter import filedialog
+import filecmp
 
 now = datetime.now()
 timestamp = now.strftime("%Y%b%d_%H%M%S")
