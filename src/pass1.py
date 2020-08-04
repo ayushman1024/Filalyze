@@ -4,8 +4,9 @@ from shutil import copy2
 from datetime import datetime
 import tkinter as tk
 from tkinter import filedialog
-import filecmp
+# import filecmp
 
+k = open("test.txt",'w+')
 now = datetime.now()
 timestamp = now.strftime("%d%b%Y%H%M%S")
 print(timestamp)
@@ -49,9 +50,9 @@ def iterate(folder, base):
                 os.remove(fpath)
                 print("removed: ", fpath)
 
-def findDups(books: pd.DataFrame):
-    books[books.duplicated(['size'])]
-    pass
+# def findDups(books: pd.DataFrame):
+#     books[books.duplicated(['size'])]
+#     pass
 
 def getBookList(folder, base):
     fdir = os.path.join(base, folder)

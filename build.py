@@ -1,7 +1,7 @@
 import os
 import nsist
 
-cfg_file= './src/installer.cfg'
+cfg_file= './installer.cfg'
 dir = os.path.dirname(os.path.abspath(__file__))
 
 os.chdir(dir)
