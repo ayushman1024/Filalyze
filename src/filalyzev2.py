@@ -42,9 +42,8 @@ def find_duplicate_files(path, delete_duplicates):
             for path in paths:
                 if delete_duplicates:
                     # move the duplicate file to the backup folder
-                    #backup_path = os.path.join(backup_folder, os.path.basename(path))
-                    #shutil.move(path, backup_path)
-                    pass
+                    backup_path = os.path.join(backup_folder, os.path.basename(path))
+                    shutil.move(path, backup_path)
                 else:
                     # add the duplicate file path to the worksheet
                     filename = os.path.basename(path)
